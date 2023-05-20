@@ -9,6 +9,7 @@ COPY requirements.txt ./
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN apt-get update && apt-get install -y poppler-utils
 
 # Copy the rest of the application code
 COPY . .
