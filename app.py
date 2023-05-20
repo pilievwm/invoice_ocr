@@ -35,7 +35,7 @@ def get_ip_address():
     return ip_address
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 5065))
     data_dir=os.environ['CERT_DIR']
     host = get_ip_address()
     app.run(debug=True, host=host, port=port, ssl_context=(os.path.join(data_dir, os.environ['FULLCHAIN_FILE']), os.path.join(data_dir, os.environ['PRIVKEY_FILE'])))
