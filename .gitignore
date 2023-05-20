@@ -1,0 +1,6 @@
+ocr/
+log/
+.env
+__pycache__/
+cert/
+.vscode/
