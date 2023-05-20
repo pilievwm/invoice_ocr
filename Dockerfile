@@ -17,7 +17,7 @@ COPY . .
 COPY .env ./
 
 # Make port 5000 available to the world outside this container
-EXPOSE 5000
+EXPOSE 5065
 
 VOLUME /app/cert
 VOLUME /app/data
