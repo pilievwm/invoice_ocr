@@ -3,4 +3,5 @@ log/
 .env
 __pycache__/
 cert/
+cred/
 .vscode/
